@@ -4,12 +4,10 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Add new User</div>
-
                     <div class="card-body">
                         <h3>{{user.email}}</h3>
                         <h3>{{user.password}}</h3>
-                        
-                        
+                                                
                         <div class="form-group">
                             <label for="">Full Name</label>
                             <input v-model="form.name" type="text" placeholder="Enter Full Name" class="form-control">
