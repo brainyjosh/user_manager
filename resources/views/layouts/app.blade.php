@@ -1,9 +1,5 @@
 
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -27,7 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </head>
 
   <body class="hold-transition sidebar-mini">
-    <div id="app" class="wrapper">
+    <div class="wrapper">
       <!-- Navbar -->
       <nav class="main-header navbar navbar-expand navbar-dark navbar-info">
         <!-- Left navbar links -->
@@ -87,7 +83,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- Sidebar -->
         <div class="sidebar">
-          <!-- Sidebar user panel (optional) -->
+         
           <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
               <!-- <img
@@ -140,7 +136,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+  
         <div class="content-header">
          
           <!-- /.container-fluid -->
