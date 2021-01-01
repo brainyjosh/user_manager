@@ -19,9 +19,14 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/secured_admin', function () {
-    return view('admin');
+    return view('superadmin');
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('profile');
+});
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::post('/newuser', [App\Http\Controllers\usersController::class, 'store'])->name('store');
 // Route::get('/secured_admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
