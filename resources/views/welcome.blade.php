@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Alliance Micro Finance Bank.</title>
+    <title>Garanti Online.</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     
@@ -55,7 +55,7 @@
         <div class="row align-items-center">
           
           <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">AllianceMFB<span class="text-primary">.</span> </a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Garanti Online<span class="text-primary">.</span> </a></h1>
           </div>
 
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -1071,7 +1071,7 @@
             <div class="border-top pt-5">
               <p class="copyright"><small>
 
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template 
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
           </small></p>
         
             </div>

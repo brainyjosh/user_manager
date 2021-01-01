@@ -13,7 +13,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <title>Alliance MF. Bank</title>
+    <title>Garanti Online</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -47,12 +47,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                                 </li>
                             @endif
-                            
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+                
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="text-white nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -87,7 +82,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8;"
           />
-          <span class="brand-text font-weight-light">Alliance MFB</span>
+          <span class="brand-text font-weight-light">Garanti Online</span>
         </a>
 
         <!-- Sidebar -->
@@ -189,9 +184,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Default to the left -->
         <strong
           >Copyright &copy; 2020
-         Alliance MF. Bank of Saving
-        
-        All rights reserved.
+        Garanti Bank Online. Bank of Saving All rights reserved.
       </footer>
     </div>
     <!-- ./wrapper -->
