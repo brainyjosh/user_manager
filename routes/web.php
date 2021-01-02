@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\usersController;
+use App\Http\Controllers\transactionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,11 +24,20 @@ Route::get('/secured_admin', function () {
     return view('superadmin');
 });
 
-Route::get('/home', function () {
-    return view('profile');
-});
+// Route::get('/home', function () {
+//     return view('profile');
+// });
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resources([  
+    '/transactions' => transactionController::class,
+    '/user' => usersController::class,
+]);
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/newuser', [App\Http\Controllers\usersController::class, 'store'])->name('store');
+// Route::post('/transactions', [App\Http\Controllers\usersController::class, 'store'])->name('store');
 // Route::get('/secured_admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');

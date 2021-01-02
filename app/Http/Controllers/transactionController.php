@@ -6,13 +6,9 @@ use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
-use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
+use App\Models\transactions;
 
-
-class usersController extends Controller
+class transactionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,7 +17,9 @@ class usersController extends Controller
      */
     public function index()
     {
-       return Auth()->User();
+        $user = Auth()->User();
+        return transactions::query()
+        ->where('user_id', $user->id)->get();
     }
 
     /**
@@ -42,20 +40,23 @@ class usersController extends Controller
      */
     public function store(Request $request)
     {
-        return User::create([
-            'name' => $request['name'],
-            'email' => $request['email'],
-            'phone' => $request['phone'],
-            'balance' => $request['balance'],
-            'total_withdrawals' => $request['withdrawals'],
-            'password' => Hash::make($request['password']),
-            'gender'  => $request['gender'],
-            'dob'  => $request['dob'],
-            'account_name'  => $request['account_name'],
-            'account_number'  => $request['account_number'],
-            'account_type'  => $request['account_type'],
-            'address' => $request['address'],
-        ]);
+        $user = Auth()->User()->id;
+        if ($request['action'] == 'send'){
+              return transactions::create([
+                'amount' => $request['amount'],
+                'description' => $request['description'],
+                'status' => 'pending',
+                'user_id' => $user
+              ]);
+        }
+        if ($request['action'] == 'deposit'){
+              return transactions::create([
+                'amount' => $request['amount'],
+                'description' => "Account Funding.",
+                'status' => 'pending',
+                'user_id' => $user
+              ]);
+        }
     }
 
     /**

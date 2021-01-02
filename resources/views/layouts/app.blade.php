@@ -47,7 +47,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class=" nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                    Welcome, {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -111,7 +111,7 @@
 
               <li class="nav-item">
                 <a href="#" class="nav-link" data-toggle="modal" data-target="#staticBackdrop">
-                  <i class="nav-icon fas fa-dollar-sign"></i>
+                  <i class="nav-icon fas fa-user"></i>
                   <p> 
                     Account Overview
                   </p>
@@ -129,7 +129,7 @@
 
               <li class="nav-item">
                 <a href="/home" class="nav-link">
-                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <i class="nav-icon fas fa-home"></i>
                   <p>
                    Home
                   </p>
@@ -213,18 +213,7 @@
 <script type="text/javascript">
 
       $(document).ready(function(){
-       alert('hi');
-   
-
-    
-    /* ChartJS
-     * -------
-     * Here we will create a few charts using ChartJS
-     */
-
-    //--------------
-    //- AREA CHART -
-    //--------------
+  
 
     // Get context with jQuery - using jQuery's .get() method.
     var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
