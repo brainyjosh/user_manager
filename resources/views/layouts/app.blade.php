@@ -110,7 +110,7 @@
                with font-awesome or any other icon font library -->
 
               <li class="nav-item">
-                <a href="#" class="nav-link" data-toggle="modal" data-target="#staticBackdrop">
+                <a href="/home" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
                   <p> 
                     Account Overview
@@ -119,7 +119,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="#" class="nav-link" data-toggle="modal" data-target="#staticBackdrop">
+                <a href="/home" class="nav-link">
                   <i class="nav-icon fas fa-dollar-sign"></i>
                   <p> 
                     Transfer Funds
