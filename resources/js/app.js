@@ -5,6 +5,81 @@
  */
 
 require('./bootstrap');
+require('admin-lte/plugins/chart.js/Chart.js')
+require('admin-lte/dist/js/adminlte.min.js')
+// require('admin-lte/dist/js/pages/dashboard.js')
+var $ = require('admin-lte/plugins/jquery/jquery.min.js')
+
+window.$ = $;
+
+    // $(document).ready(function(){
+        
+    // )}
+
+    $(document).ready(function(){
+      
+         /* Chart.js Charts */
+  // Sales chart
+  var salesChartCanvas = document.getElementById('revenue-chart-canvas').getContext('2d');
+  //$('#revenue-chart').get(0).getContext('2d');
+
+  var salesChartData = {
+    labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
+      {
+        label               : 'Deposited',
+        backgroundColor     : 'rgba(60,141,188,0.9)',
+        borderColor         : 'rgba(60,141,188,0.8)',
+        pointRadius          : false,
+        pointColor          : '#3b8bba',
+        pointStrokeColor    : 'rgba(60,141,188,1)',
+        pointHighlightFill  : '#fff',
+        pointHighlightStroke: 'rgba(60,141,188,1)',
+        data                : [80000, 69000, 10000, 59000, 400000, 278000, 18000]
+      },
+      {
+        label               : 'Transfered',
+        backgroundColor     : 'rgba(210, 214, 222, 1)',
+        borderColor         : 'rgba(210, 214, 222, 1)',
+        pointRadius         : false,
+        pointColor          : 'rgba(210, 214, 222, 1)',
+        pointStrokeColor    : '#c1c7d1',
+        pointHighlightFill  : '#fff',
+        pointHighlightStroke: 'rgba(220,220,220,1)',
+        data                : [30000, 45000, 80000, 40000, 200000, 150000, 80000]
+      },
+    ]
+  }
+
+  var salesChartOptions = {
+    maintainAspectRatio : false,
+    responsive : true,
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        gridLines : {
+          display : false,
+        }
+      }],
+      yAxes: [{
+        gridLines : {
+          display : false,
+        }
+      }]
+    }
+  }
+
+  // This will get the first returned node in the jQuery collection.
+  var salesChart = new Chart(salesChartCanvas, { 
+      type: 'bar', 
+      data: salesChartData, 
+      options: salesChartOptions
+    }
+  )
+
+    })
 
 window.Vue = require('vue');
 
