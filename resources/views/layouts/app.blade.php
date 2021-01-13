@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <title>Garanti Online</title>
+    <title>Garanti Bank Turkey</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -78,7 +78,7 @@
             class="brand-image img-circle elevation-3"
             style="opacity: 0.8;"
           />
-          <span class="brand-text font-weight-light">Garanti Online</span>
+          <span class="brand-text font-weight-light">Garanti Bank</span>
         </a>
 
         <!-- Sidebar -->
