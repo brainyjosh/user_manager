@@ -18203,6 +18203,71 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MODULE_1__["HasError"].name, vform__WEBPACK_IMPORTED_MODULE_1__["HasError"]);
@@ -18211,23 +18276,23 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MOD
   data: function data() {
     return {
       user: {
-        email: '',
-        password: ''
+        email: "",
+        password: ""
       },
       // Create a new form instance
       form: new vform__WEBPACK_IMPORTED_MODULE_1__["Form"]({
-        name: '',
-        email: '',
-        phone: '',
-        balance: '',
-        withdraws: '',
-        password: '',
-        gender: '',
-        dob: '',
-        account_name: '',
-        account_number: '',
-        account_type: '',
-        address: '',
+        name: "",
+        email: "",
+        phone: "",
+        balance: "",
+        withdraws: "",
+        password: "",
+        gender: "",
+        dob: "",
+        account_name: "",
+        account_number: "",
+        account_type: "",
+        address: "",
         remember: false
       })
     };
@@ -18238,16 +18303,16 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MOD
 
       event.preventDefault(); // Submit the form via a POST request
 
-      this.form.post('/newuser').then(function (_ref) {
+      this.form.post("/newuser").then(function (_ref) {
         var data = _ref.data;
-        _this.user.email = 'EMAIL: ' + data.email;
-        _this.user.password = 'PASSWORD: ' + _this.form.password;
-        alert('Account was succesfully Created. login with the login details you provided.');
+        _this.user.email = "EMAIL: " + data.email;
+        _this.user.password = "PASSWORD: " + _this.form.password;
+        alert("Account was succesfully Created. login with the login details you provided.");
       });
     }
   },
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -76876,27 +76941,47 @@ var render = function() {
             _c("div", { staticClass: "form-group" }, [
               _c("label", { attrs: { for: "" } }, [_vm._v("Gender")]),
               _vm._v(" "),
-              _c("input", {
-                directives: [
-                  {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.form.gender,
-                    expression: "form.gender"
-                  }
-                ],
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
-                domProps: { value: _vm.form.gender },
-                on: {
-                  input: function($event) {
-                    if ($event.target.composing) {
-                      return
+              _c(
+                "select",
+                {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.form.gender,
+                      expression: "form.gender"
                     }
-                    _vm.$set(_vm.form, "gender", $event.target.value)
+                  ],
+                  staticClass: "form-control",
+                  attrs: { id: "gender", name: "gender" },
+                  on: {
+                    change: function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.$set(
+                        _vm.form,
+                        "gender",
+                        $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      )
+                    }
                   }
-                }
-              })
+                },
+                [
+                  _c("option", { attrs: { value: "Male" } }, [_vm._v("Male")]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "Female" } }, [
+                    _vm._v("Female")
+                  ])
+                ]
+              )
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "form-group" }, [
@@ -76912,7 +76997,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
+                attrs: { type: "text", placeholder: "Enter Date of Birth" },
                 domProps: { value: _vm.form.dob },
                 on: {
                   input: function($event) {
@@ -76938,7 +77023,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
+                attrs: { type: "text", placeholder: "Type Account Name" },
                 domProps: { value: _vm.form.account_name },
                 on: {
                   input: function($event) {
@@ -76964,7 +77049,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
+                attrs: { type: "text", placeholder: "Type Account Number" },
                 domProps: { value: _vm.form.account_number },
                 on: {
                   input: function($event) {
@@ -76990,7 +77075,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
+                attrs: { type: "text", placeholder: "Enter Account Type" },
                 domProps: { value: _vm.form.account_type },
                 on: {
                   input: function($event) {
@@ -77016,7 +77101,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Full Name" },
+                attrs: { type: "text", placeholder: "Enter Contact Address" },
                 domProps: { value: _vm.form.address },
                 on: {
                   input: function($event) {
@@ -77068,7 +77153,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Email Address" },
+                attrs: { type: "text", placeholder: "Enter Phone Number" },
                 domProps: { value: _vm.form.phone },
                 on: {
                   input: function($event) {
@@ -77094,7 +77179,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Email Address" },
+                attrs: { type: "text", placeholder: "Enter Password" },
                 domProps: { value: _vm.form.password },
                 on: {
                   input: function($event) {
@@ -77120,7 +77205,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Email Address" },
+                attrs: { type: "text", placeholder: "Enter Account Balance" },
                 domProps: { value: _vm.form.balance },
                 on: {
                   input: function($event) {
@@ -77148,7 +77233,7 @@ var render = function() {
                   }
                 ],
                 staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Enter Email Address" },
+                attrs: { type: "text", placeholder: "Type total Withdrawals" },
                 domProps: { value: _vm.form.withdrawals },
                 on: {
                   input: function($event) {
@@ -77172,7 +77257,11 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Create New User")]
+                [
+                  _vm._v(
+                    "\n                            Create New User\n                        "
+                  )
+                ]
               )
             ])
           ])
