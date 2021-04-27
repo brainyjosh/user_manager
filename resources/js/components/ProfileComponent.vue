@@ -1,9 +1,15 @@
 <template>
     <div>
           <div class="container-fluid">
-       
+       <marquee>
+         <h3>
+           Congratulations, your account is now active, please contact your accout officer if you have any question.
+         </h3>
+ 
+        </marquee>
            <!-- Small boxes (Stat box) -->
         <div class="row">
+          
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">
@@ -88,6 +94,8 @@
                        style="position: relative; height: 300px;">
                       <canvas id="revenue-chart-canvas" height="300" style="height: 300px;"></canvas>                         
                    </div> -->
+
+                   <img src="/images/user.jpg" class="image-top thumbnail" alt="" style="max-width:100%;">
 
                    <div class="table-responsive">
                             <table

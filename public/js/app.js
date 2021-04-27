@@ -18612,6 +18612,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MODULE_1__["HasError"].name, vform__WEBPACK_IMPORTED_MODULE_1__["HasError"]);
@@ -77293,370 +77301,392 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container-fluid" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-3 col-6" }, [
-          _c("div", { staticClass: "small-box bg-info" }, [
-            _c("div", { staticClass: "inner" }, [
-              _c("h2", [_vm._v(" " + _vm._s(_vm.user.balance))]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Balance")])
-            ]),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1)
+    _c(
+      "div",
+      { staticClass: "container-fluid" },
+      [
+        _c("marquee", [
+          _c("h3", [
+            _vm._v(
+              "\n       Congratulations, your account is now active, please contact your accout officer if you have any question.\n     "
+            )
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-lg-3 col-6" }, [
-          _c("div", { staticClass: "small-box bg-success" }, [
-            _c("div", { staticClass: "inner" }, [
-              _c("h2", [_vm._v(_vm._s(_vm.user.total_withdrawals))]),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-info" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h2", [_vm._v(" " + _vm._s(_vm.user.balance))]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Balance")])
+              ]),
               _vm._v(" "),
-              _c("p", [_vm._v("Total Withdrawals")])
-            ]),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _vm._m(3)
-          ])
-        ]),
-        _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _vm._m(5)
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-lg-6" }, [
-          _c("div", { staticClass: "card card-primary" }, [
-            _vm._m(6),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("div", { staticClass: "table-responsive" }, [
-                _c(
-                  "table",
-                  {
-                    staticClass:
-                      "dbkit-table table table-bordered table-striped table-hover"
-                  },
-                  [
-                    _c("tr", {}, [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Full Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.name))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Gender")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.gender))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Date of Birth")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.dob))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Account Name")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.account_name))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Account Number")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.account_number))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Account Type")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.account_type))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Email")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.email))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Phone")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.phone))])
-                    ]),
-                    _vm._v(" "),
-                    _c("tr", [
-                      _c("td", { staticClass: "bg-primary" }, [
-                        _vm._v("Address")
-                      ]),
-                      _vm._v(" "),
-                      _c("td", [_vm._v(_vm._s(_vm.user.address))])
-                    ])
-                  ]
-                )
-              ])
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _vm._m(7),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("form", { attrs: { action: "#" } }, [
-                _c("div", { staticClass: "input-form form-group" }, [
-                  _c("label", [_vm._v("Amount - USD")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.deposit_form.amount,
-                        expression: "deposit_form.amount"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", placeholder: "Enter Amount" },
-                    domProps: { value: _vm.deposit_form.amount },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(
-                          _vm.deposit_form,
-                          "amount",
-                          $event.target.value
-                        )
-                      }
-                    }
-                  })
-                ]),
+          _c("div", { staticClass: "col-lg-3 col-6" }, [
+            _c("div", { staticClass: "small-box bg-success" }, [
+              _c("div", { staticClass: "inner" }, [
+                _c("h2", [_vm._v(_vm._s(_vm.user.total_withdrawals))]),
                 _vm._v(" "),
-                _c("div", { staticClass: "for-group" }, [
+                _c("p", [_vm._v("Total Withdrawals")])
+              ]),
+              _vm._v(" "),
+              _vm._m(2),
+              _vm._v(" "),
+              _vm._m(3)
+            ])
+          ]),
+          _vm._v(" "),
+          _vm._m(4),
+          _vm._v(" "),
+          _vm._m(5)
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "card card-primary" }, [
+              _vm._m(6),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("img", {
+                  staticClass: "image-top thumbnail",
+                  staticStyle: { "max-width": "100%" },
+                  attrs: { src: "/images/user.jpg", alt: "" }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "table-responsive" }, [
                   _c(
-                    "button",
+                    "table",
                     {
-                      staticClass: "btn btn-success form-control",
-                      attrs: { type: "button" },
-                      on: {
-                        click: function($event) {
-                          return _vm.deposit()
-                        }
-                      }
+                      staticClass:
+                        "dbkit-table table table-bordered table-striped table-hover"
                     },
                     [
-                      _c("i", { staticClass: "fas fa-arrow-down" }),
-                      _vm._v("  Deposit Now \n                            ")
+                      _c("tr", {}, [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Full Name")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Gender")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.gender))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Date of Birth")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.dob))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Account Name")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.account_name))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Account Number")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.account_number))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Account Type")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.account_type))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Email")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.email))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Phone")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.phone))])
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "bg-primary" }, [
+                          _vm._v("Address")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v(_vm._s(_vm.user.address))])
+                      ])
                     ]
                   )
                 ])
               ])
-            ])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-lg-6" }, [
-          _c("div", { staticClass: "card card-primary card-outline" }, [
-            _vm._m(8),
+            ]),
             _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._m(9),
+            _c("div", { staticClass: "card" }, [
+              _vm._m(7),
               _vm._v(" "),
-              _c("div", { staticClass: "trad-history mt-4" }, [
-                _c(
-                  "div",
-                  { staticClass: "tab-content", attrs: { id: "myTabContent" } },
-                  [
+              _c("div", { staticClass: "card-body" }, [
+                _c("form", { attrs: { action: "#" } }, [
+                  _c("div", { staticClass: "input-form form-group" }, [
+                    _c("label", [_vm._v("Amount - USD")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.deposit_form.amount,
+                          expression: "deposit_form.amount"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Enter Amount" },
+                      domProps: { value: _vm.deposit_form.amount },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.deposit_form,
+                            "amount",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "for-group" }, [
                     _c(
-                      "div",
+                      "button",
                       {
-                        staticClass: "tab-pane fade show active",
-                        attrs: { id: "buy_order", role: "tabpanel" }
+                        staticClass: "btn btn-success form-control",
+                        attrs: { type: "button" },
+                        on: {
+                          click: function($event) {
+                            return _vm.deposit()
+                          }
+                        }
                       },
                       [
-                        _c("div", { staticClass: "table-responsive" }, [
-                          _c(
-                            "table",
-                            {
-                              staticClass:
-                                "dbkit-table table table-bordered table-striped table-hover"
-                            },
-                            [
-                              _vm._m(10),
-                              _vm._v(" "),
-                              _vm._l(_vm.transactions, function(item) {
-                                return _c("tr", { key: item.id }, [
-                                  _c("td", [_vm._v(_vm._s(item.created_at))]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v(_vm._s(item.status))]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v(_vm._s(item.amount))]),
-                                  _vm._v(" "),
-                                  _c("td", [_vm._v(_vm._s(item.description))])
-                                ])
-                              }),
-                              _vm._v(" "),
-                              _vm.no_transactions
-                                ? _c("tr", [
-                                    _c("td", { attrs: { colspan: "4" } }, [
-                                      _vm._v(
-                                        "Sorry You have not made any transactions yet."
-                                      )
-                                    ])
-                                  ])
-                                : _vm._e()
-                            ],
-                            2
-                          )
-                        ])
+                        _c("i", { staticClass: "fas fa-arrow-down" }),
+                        _vm._v("  Deposit Now \n                            ")
                       ]
                     )
-                  ]
-                )
+                  ])
+                ])
               ])
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "card" }, [
-            _vm._m(11),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _c("form", { attrs: { action: "#" } }, [
-                _c("div", { staticClass: "input-form form-group" }, [
-                  _c("label", [_vm._v("Amount - USD")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.send_form.amount,
-                        expression: "send_form.amount"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", placeholder: "Enter Amount" },
-                    domProps: { value: _vm.send_form.amount },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.send_form, "amount", $event.target.value)
-                      }
-                    }
-                  })
-                ]),
+          _c("div", { staticClass: "col-lg-6" }, [
+            _c("div", { staticClass: "card card-primary card-outline" }, [
+              _vm._m(8),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _vm._m(9),
                 _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", [_vm._v("ACNT. NO.")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.send_form.account_number,
-                        expression: "send_form.account_number"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: {
-                      type: "text",
-                      placeholder: "Enter Account Number."
-                    },
-                    domProps: { value: _vm.send_form.account_number },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(
-                          _vm.send_form,
-                          "account_number",
-                          $event.target.value
-                        )
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("label", [_vm._v("Description")]),
-                  _vm._v(" "),
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
-                        value: _vm.send_form.description,
-                        expression: "send_form.description"
-                      }
-                    ],
-                    staticClass: "form-control",
-                    attrs: { type: "text", placeholder: "Enter Description" },
-                    domProps: { value: _vm.send_form.description },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(
-                          _vm.send_form,
-                          "description",
-                          $event.target.value
-                        )
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "for-group" }, [
+                _c("div", { staticClass: "trad-history mt-4" }, [
                   _c(
-                    "button",
+                    "div",
                     {
-                      staticClass: "btn btn-primary form-control",
-                      attrs: { type: "button" },
-                      on: {
-                        click: function($event) {
-                          return _vm.send()
-                        }
-                      }
+                      staticClass: "tab-content",
+                      attrs: { id: "myTabContent" }
                     },
                     [
-                      _vm._v("\n                              Send Now "),
-                      _c("i", { staticClass: "fas fa-paper-plane" })
+                      _c(
+                        "div",
+                        {
+                          staticClass: "tab-pane fade show active",
+                          attrs: { id: "buy_order", role: "tabpanel" }
+                        },
+                        [
+                          _c("div", { staticClass: "table-responsive" }, [
+                            _c(
+                              "table",
+                              {
+                                staticClass:
+                                  "dbkit-table table table-bordered table-striped table-hover"
+                              },
+                              [
+                                _vm._m(10),
+                                _vm._v(" "),
+                                _vm._l(_vm.transactions, function(item) {
+                                  return _c("tr", { key: item.id }, [
+                                    _c("td", [_vm._v(_vm._s(item.created_at))]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v(_vm._s(item.status))]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v(_vm._s(item.amount))]),
+                                    _vm._v(" "),
+                                    _c("td", [_vm._v(_vm._s(item.description))])
+                                  ])
+                                }),
+                                _vm._v(" "),
+                                _vm.no_transactions
+                                  ? _c("tr", [
+                                      _c("td", { attrs: { colspan: "4" } }, [
+                                        _vm._v(
+                                          "Sorry You have not made any transactions yet."
+                                        )
+                                      ])
+                                    ])
+                                  : _vm._e()
+                              ],
+                              2
+                            )
+                          ])
+                        ]
+                      )
                     ]
                   )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card" }, [
+              _vm._m(11),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [
+                _c("form", { attrs: { action: "#" } }, [
+                  _c("div", { staticClass: "input-form form-group" }, [
+                    _c("label", [_vm._v("Amount - USD")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.send_form.amount,
+                          expression: "send_form.amount"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Enter Amount" },
+                      domProps: { value: _vm.send_form.amount },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(_vm.send_form, "amount", $event.target.value)
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", [_vm._v("ACNT. NO.")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.send_form.account_number,
+                          expression: "send_form.account_number"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "text",
+                        placeholder: "Enter Account Number."
+                      },
+                      domProps: { value: _vm.send_form.account_number },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.send_form,
+                            "account_number",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", [_vm._v("Description")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.send_form.description,
+                          expression: "send_form.description"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text", placeholder: "Enter Description" },
+                      domProps: { value: _vm.send_form.description },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.send_form,
+                            "description",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "for-group" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-primary form-control",
+                        attrs: { type: "button" },
+                        on: {
+                          click: function($event) {
+                            return _vm.send()
+                          }
+                        }
+                      },
+                      [
+                        _vm._v("\n                              Send Now "),
+                        _c("i", { staticClass: "fas fa-paper-plane" })
+                      ]
+                    )
+                  ])
                 ])
               ])
             ])
           ])
         ])
-      ])
-    ])
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = [
